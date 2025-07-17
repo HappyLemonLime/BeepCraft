@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="main.css">
+ <link rel="icon" type="image/x-icon" href="favicon.ico">
+<meta charset="utf-8">
+<title>BeepCraft - Server information</title>
+<meta content="BeepCraft" property="og:title" />
+<meta content="BeepCraft - Home page" property="og:description" />
+<meta content="https://BeepCraft.net" property="og:url" />
+<meta content="https://BeepCraft.net/gallery/BeepCraftLogoTransparent.png" property="og:image" />
+<meta content="#7842ff" data-react-helmet="true" name="theme-color" />
+<script>
+	function copyServerAddress() {
+		const serverAddress = "play.beepcraft.net";
+		navigator.clipboard.writeText(serverAddress).then(() => {
+			const popup = document.getElementById("popup");
+			popup.textContent = "Server address copied to clipboard!";
+			popup.classList.add("show");
+			setTimeout(() => {
+				popup.classList.remove("show");
+			}, 2000);
+		}).catch(err => {
+			console.error("Clipboard write failed:", err);
+		});
+	}
+</script>
+</head>
+<body>
+<nav class="navbar">
+  <div class="col"><img src="gallery/BeepCraftLogoTransparent.png" alt="BeepCraft" height="48px"></div>
+  <div class="navbartitle col"><b>BeepCraft - Server information</b></div>
+  <div class="col">
+    <a class="btn btn-shadow btn-shadow--black navbarlinks " href="rules"> <span>Rules</span> </a>
+    <a class="btn btn-shadow btn-shadow--black navbarlinks " href="about"> <span>About</span> </a>
+    <a class="btn btn-shadow btn-shadow--black navbarlinks " href="https://discord.com/invite/beepbox" target="_blank" > <span class="copyable">Discord</span> </a>
+  </div>
+</nav>
+<h1 class="intro">How do I join BeepCraft?</h1>
+	</div>
+<p class="responce1">To join BeepCraft, open the Minecraft launcher and launch <b>Minecraft Java Edition</b> and then, select version <b>1.21.7</b>, then when the game has launched click "Multiplayer" Accept the checkbox that you may get, and then click "Add Server" Give the server a name such as BeepCraft and for the adress, type in <a class="clickable" onclick="copyServerAddress()" title="Copy server address">play.beepcraft.net ⎋</a></p>
+<div class="questiondiv">
+  <h1 class="intro">What are some commands that you can use to help you in game?</h1>
+
+  <p><b>/wild</b> & <b>/rtp</b>: Randomly teleport yourself away from spawn. Use <b>/spawn</b> to head back.</p>
+  <p><b>/spawn</b>: Teleports you back to the server's spawn.</p>
+  <p><b>/tpa &lt;player&gt;</b>: Sends a teleport request to the specified player.</p>
+  <p><b>/tpaccept</b>: Accepts a teleport request from another player.</p>
+  <p><b>/kit</b>: Get basic stone tools with <b>/kit default</b> and a claim shovel with <b>/kit claim</b>.</p>
+  <p><b>/msg &lt;player&gt; &lt;message&gt;</b>: Sends a private message to another player.</p>
+  <p><b>/home</b>: Teleports you to your home location.</p>
+  <p><b>/sethome</b>: Set your current location as your home. Return here later with <b>/home</b>.</p>
+  <p><b>/warp &lt;warpname&gt;</b>: Warps you to different locations. Used in events.</p>
+</div>
+
+
+
+<div id="popup">Server address copied to clipboard!</div>
+<div class="footer">
+<nav class="navbar">
+  <div class="col"></div>
+  <footer class="navbartitle col footertext">© 2025 - BeepCraft.net | BeepCraft - Server information </footer>
+  <div class="col">
+    <a class="footerlinks" href="index">Home</a>
+    <a class="footerlinks" href="#top">Back to top</a>
+    <a class="footerlinks" href="https://discord.com/invite/beepbox" target="_blank">Discord</a>
+  </div>
+</nav>
+</div>
+
+
+</body>
+</html>
