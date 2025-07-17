@@ -1,7 +1,6 @@
 @charset "utf-8";
 
 html {
-    background: var(--page-margin, #020009);
     overflow-x: hidden;
     font-size: large;
     font-family: 'B612', sans-serif;
